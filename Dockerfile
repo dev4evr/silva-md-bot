@@ -1,17 +1,20 @@
-FROM node:18
+# استخدم Node.js 20
+FROM node:20-alpine
 
-# Create app directory
+# أنشئ مجلد العمل
 WORKDIR /app
 
-# Copy package.json and install dependencies
+# انسخ package.json و package-lock.json
 COPY package.json package-lock.json* ./
+
+# ثبت الاعتماديات
 RUN npm install --production
 
-# Copy the rest of the app
+# انسخ بقية الملفات
 COPY . .
 
-# Expose the port
-EXPOSE 9090
+# افتح البورت
+EXPOSE 8000
 
-# Start the bot
+# أمر التشغيل
 CMD ["node", "index.js"]
