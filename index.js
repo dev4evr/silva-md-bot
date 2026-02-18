@@ -1,3 +1,15 @@
+const express = require( express );
+const app = express();
+
+const PORT = process.env.PORT || 8000;
+
+app.get( / , (req, res) => {
+    res.send( Silva MD Bot is running 🚀 );
+});
+
+app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
+});
 const fs = require('fs');
 const http = require('http');
 const path = require('path');
