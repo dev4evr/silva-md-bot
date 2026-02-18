@@ -61,9 +61,9 @@ module.exports = {
     GITHUB: 'https://github.com/SilvaTechB/silva-md-bot',
     
     // Messages
-    MESSAGES: {
-        groupOnly: '⚠️ This command only works in groups.',
-        adminOnly: '⚠️ This command requires admin privileges.',
-        ownerOnly: '⚠️ This command is only for the bot owner.'
+    MESSAGES: : {
+        groupOnly:  ⚠️ هذا الأمر يعمل فقط في المجموعات. ,
+        adminOnly:  ⚠️ هذا الأمر يحتاج صلاحيات المشرف. ,
+        ownerOnly:  ⚠️ هذا الأمر خاص بصاحب البوت فقط. 
     }
 };
